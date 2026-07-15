@@ -1,0 +1,396 @@
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    padding:40px 0;
+
+}
+
+.container{
+
+    width:700px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    margin-bottom:40px;
+
+}
+
+h1{
+
+    color:#ff4081;
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    font-size:24px;
+
+    line-height:1.5;
+
+    margin-bottom:35px;
+
+}
+
+.cake{
+
+    width:350px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    animation:float 3s ease-in-out infinite;
+
+    user-select:none;
+
+}
+
+.cake:hover{
+
+    transform:scale(1.08);
+
+}
+
+.clickText{
+
+    margin-top:20px;
+
+    color:#666;
+
+    font-size:20px;
+
+    font-style:italic;
+
+}
+
+button{
+
+    padding:15px 30px;
+
+    font-size:20px;
+
+    background:#ff4d88;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+.letter{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    text-align:left;
+
+    color:#555;
+
+}
+
+.photoContainer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+    margin-bottom:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.photoCard{
+
+    width:220px;
+
+}
+
+.photoCard img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.caption{
+
+    font-size:24px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+
+}
+
+.birthdayVideo{
+
+    display:block;
+
+    width:60%;
+
+    max-width:450px;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+.spotifyQR{
+
+    width:220px;
+
+    border-radius:20px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+iframe{
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+.videoWrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:30px;
+
+}
+
+.videoWrapper iframe{
+
+    width:90%;
+
+    max-width:700px;
+
+    aspect-ratio:16/9;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+.dogsPhoto{
+
+    width:80%;
+
+    max-width:550px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+.parchment{
+
+    width:900px;
+
+    max-width:90%;
+
+    margin:50px auto;
+
+    padding:70px;
+
+    background:#f8efd5;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+    border:8px solid #d4c29a;
+
+}
+
+.parchment h1{
+
+    text-align:center;
+
+    color:#5a3e2b;
+
+    margin-bottom:40px;
+
+}
+
+#message{
+
+    font-family:'Dancing Script', cursive;
+
+    font-size:34px;
+
+    line-height:1.8;
+
+    color:#3d2b1f;
+
+    white-space:pre-wrap;
+
+}
+.parchment{
+
+    width:900px;
+
+    max-width:90%;
+
+    margin:50px auto;
+
+    padding:70px;
+
+    background:#f6edd7;
+
+    border:10px solid #d2bb8c;
+
+    border-radius:12px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    position:relative;
+
+}
+
+.parchment::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.18), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(0,0,0,.04), transparent 40%);
+
+    pointer-events:none;
+
+}
+
+.parchment h1{
+
+    text-align:center;
+
+    color:#5b3d1d;
+
+    font-size:48px;
+
+    margin-bottom:45px;
+
+}
+
+#message{
+
+    font-family:'Patrick Hand', cursive;
+
+    font-size:30px;
+
+    line-height:1.9;
+
+    color:#3d2b1f;
+
+    white-space:pre-wrap;
+
+    position:relative;
+
+    z-index:2;
+
+}

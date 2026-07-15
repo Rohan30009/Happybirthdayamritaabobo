@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday, Amrita ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="parchment">
+
+<h1>Happy Birthday, Amrita (Bobo). ❤️</h1>
+
+<p id="message"></p>
+
+</div>
+
+<script>
+
+const text = `Dear Bobo,
+
+Happy Birthday!
+
+I am truly thankful and grateful for you. You inspire me to become a better person every day, irrespective of the distance or the circumstances.
+
+You are the sweetest sweetest souls I know, and I thank God every day for giving me the chance to know you.
+
+There is so much that I continue to learn from you.
+
+I really admire how kind, loving, yet wonderfully stubborn and headstrong you are. A fiery little angel who wields a stethoscope. There is very little I'd ever want to change about you.
+
+My mom used to be your biggest fan because of how effortlessly you balanced your singing and your dactari. Somewhere along the way, I became one too. I'll confess, I love watching you sing and seeing the joy and happiness you bring to everyone in the audience.
+
+I sincerely hope you never stop singing. It would be a shame if a gift that brings so much happiness to so many people were ever left unused. The world genuinely becomes a little brighter when you share it.
+
+Just by being yourself, you make my world a better place. Thank you for everything.
+
+I hope you liked this little website. My coding skills are still rather rusty, but I made it with a lot of love, a fair bit of effort, and more HTML, CSS, and JavaScript than I've written in a very long time. If it managed to make you smile even once today, then every minute spent building it was worth it.
+
+More than anything else, I hope this year brings you good health, lots of oppurtunities to sing, countless reasons to smile, new adventures worth remembering ( with me in them pl!!!), and the quiet satisfaction of seeing your hard work rewarded. You deserve every bit of happiness that comes your way.
+
+Happy Birthday once again.
+
+With warmth, love and regards,
+
+Rohan 
+16.07.26`;
+
+let i = 0;
+
+const speed = 32;
+
+function typeWriter(){
+
+    if(i < text.length){
+
+        document.getElementById("message").innerHTML += text.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter, speed);
+
+    }
+
+}
+
+window.onload = typeWriter;
+
+</script>
+
+</body>
+
+</html>
